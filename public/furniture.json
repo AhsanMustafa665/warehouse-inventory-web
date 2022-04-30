@@ -5,7 +5,7 @@
         "description": "Shop Affordable New Office Furniture. Explore Our Unmatched Furniture Selection Today! Huge Selection of Office Furniture to Fit Your Needs. Custom Sizes Available.",
         "price": "168",
         "quality": "10",
-        "supplier name": "Mr.Alex"
+        "supplierName": "Mr.Alex"
     },
     {
         "name": "Wing chair",
@@ -13,7 +13,7 @@
         "description": "Office Furniture Company in Miami. Great In-Stock Inventory. In House Delivery Team. ",
         "price": "200",
         "quality": "12",
-        "supplier name": "ML. Glox"
+        "supplierName": "ML. Glox"
     },
     {
         "name": "Gamming chair",
@@ -21,7 +21,7 @@
         "description": "Modern Designer Styles For Home, Work and More. Iconic Modern Furniture, Textiles, Lighting etc.",
         "price": "198",
         "quality": "14",
-        "supplier name": "Mr. Jander"
+        "supplierName": "Mr. Jander"
     },
     {
         "name": "Upholstered bench",
@@ -29,15 +29,15 @@
         "description": "Shop Affordable New Office Furniture. Explore Our Unmatched Furniture Selection Today!",
         "price": "102",
         "quality": "19",
-        "supplier name": "Mr. Bravo"
+        "supplierName": "Mr. Bravo"
     },
     {
         "name": "Sea-beach chair",
         "img": "https://img.freepik.com/free-photo/chair-table-dinning-beach-sea-with-blue-sky_74190-6094.jpg",
-        "description": "he Latest Offers Today. Search The Best Companies. Find The Best Price Here.",
+        "description": "Latest Offers Today. Search The Best Companies. Find The Best Price Here.",
         "price": "195",
         "quality": "20",
-        "supplier name": "Mr. Messio"
+        "supplierName": "Mr. Messio"
     },
     {
         "name": "Deck chair",
@@ -45,6 +45,6 @@
         "description": "Search Office Furniture Online. Compare Suppliers & Prices All In One Place. Search Now.",
         "price": "105",
         "quality": "18",
-        "supplier name": "Mr. Steven"
+        "supplierName": "Mr. Steven"
     }
 ]

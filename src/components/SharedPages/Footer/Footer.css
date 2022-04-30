@@ -1,0 +1,13 @@
+footer {
+    width: 100%;
+
+}
+
+footer.footer-style {
+    display: flex;
+}
+
+.footer-style h6 {
+    text-align: left;
+    padding-left: 20px;
+}
