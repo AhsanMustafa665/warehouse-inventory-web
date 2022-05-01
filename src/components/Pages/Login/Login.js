@@ -54,7 +54,7 @@ const Login = () => {
     const handleLogin = (e) => {
         e.preventDefault();
 
-        console.log(userInfo)
+        
 
         signInWithEmail(userInfo.email, userInfo.password);
         
@@ -66,7 +66,7 @@ const Login = () => {
 
        useEffect(() => {
            if (user) {
-               navigate(from);
+               navigate(from, { replace:true });
            }
        }, [from, navigate, user]);
     

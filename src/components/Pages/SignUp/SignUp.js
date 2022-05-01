@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useCreateUserWithEmailAndPassword } from "react-firebase-hooks/auth";
+import { useCreateUserWithEmailAndPassword, useUpdateProfile } from "react-firebase-hooks/auth";
 import { useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -23,6 +23,7 @@ const Signup = () => {
 
     const [createUserWithEmailAndPassword, user, loading, hookError] =
         useCreateUserWithEmailAndPassword(auth, { sendEmailVerification: true });
+        const [updateProfile, updating, UpdateError] = useUpdateProfile(auth);
 
     const handleEmailChange = (e) => {
         const emailRegex = /\S+@\S+\.\S+/;
@@ -61,9 +62,8 @@ const Signup = () => {
         }
     };
 
-    const handleLogin = (e) => {
-        e.preventDefault();
-        console.log(userInfo);
+    const handleLogin = (event) => {
+        event.preventDefault();
         createUserWithEmailAndPassword(userInfo.email, userInfo.password);
     };
 
@@ -92,14 +92,32 @@ const Signup = () => {
         }
     }, [from, navigate, user]);
 
+    if (user) {
+        console.log('user',user);
+    }
+    const handleSignUp = async (event) => {
+        event.preventDefault();
+        const name = event.target.name.value;
+        const email = event.target.email.value;
+        const password = event.target.password.value;
+        
+        await createUserWithEmailAndPassword(email, password);
+        await updateProfile({ displayName:name});
+        alert('Updated profile');
+        console.log('upadate Profile');
+        navigate('/home');
+
+    }
+
     return (
         <div className="login-container">
             <div className="login-title">Sign up</div>
             <form className="login-form" onSubmit={handleLogin}>
-                <input type="text" placeholder="Your Email" onChange={handleEmailChange} />
-                {errors?.email && <p className="error-message">{errors.email}</p>}
+                <input type="text" name="name" placeholder="Your Name" ></input>
+                <input type="email" placeholder="Your Email" required onChange={handleEmailChange} />
+                {errors?.email && <p className="error-message" >{errors.email}</p>}
                 <div className="relative">
-                    <input type={showPass ? "text" : "password"} placeholder="password" onChange={handlePasswordChange} />
+                    <input type={showPass ? "text" : "password"}  required placeholder="password" onChange={handlePasswordChange} />
                     {errors?.password && <p className="error-message">{errors.password}</p>}
                     <p className="absolute top-3 right-5" onClick={() => setShowPass(!showPass)}>👁‍🗨</p>
                 </div>
@@ -109,7 +127,7 @@ const Signup = () => {
                     onChange={handleConfirmPasswordChange}
                 />
 
-                <button>Sign up</button>
+                <button onClick={()=>handleSignUp}>Sign up</button>
 
                 <ToastContainer />
             </form>

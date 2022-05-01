@@ -31,8 +31,8 @@ const Footer = () => {
                     <h4>PAY WITH</h4>
                     <div>
                         <div>
-                        <img style={{width:'8%',marginRight:'15px'}} src={visa} alt="" />
-                        <img style={{width:'8%'}} src={master} alt="" />
+                        <img style={{width:'5%',marginRight:'15px'}} src={visa} alt="" />
+                        <img style={{width:'5%'}} src={master} alt="" />
                     </div>
                     </div>
             
