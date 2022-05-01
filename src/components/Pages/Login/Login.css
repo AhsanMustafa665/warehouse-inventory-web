@@ -16,9 +16,11 @@
     margin-top: 10px;
     font-weight: 900;
     font-size: 1.8rem;
-    color: #1da1f2;
+    color: #708090;
     letter-spacing: 1px;
 }
+
+/* background: linear-gradient(145deg, #a4b9bd, #c3dbe1); */
 
 .login-form {
     text-align: left;
@@ -59,9 +61,9 @@
 }
 
 .login-container button {
-    color: white;
+    color: #708090;
     margin-top: 20px;
-    background: #1da1f2;
+    background: linear-gradient(145deg, #a4b9bd, #c3dbe1);
     height: 40px;
     border-radius: 20px;
     cursor: pointer;

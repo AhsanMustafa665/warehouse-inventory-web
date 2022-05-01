@@ -2,3 +2,23 @@
     background: linear-gradient(145deg, #a4b9bd, #c3dbe1);
 
 }
+
+.link {
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1e90c2;
+    transition: color ease-in-out 300ms;
+}
+
+.active-link {
+    margin-left: 15px;
+    font-size: 20px;
+    transition: color ease-in-out 300ms;
+    color: chocolate;
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 120%;
+
+}

@@ -5,7 +5,7 @@ import './Furnitures.css';
 const Furnitures = () => {
 
     const [shows, setShows] = useState([]);
-
+    
     useEffect( ()=>{
         fetch('http://localhost:5000/product')
         .then(res => res.json())
@@ -17,13 +17,14 @@ const Furnitures = () => {
             <div className="row">
             <h1 style={{color:'rgb(122, 15, 15)',fontWeight: '900',fontSize: '2.2rem',letterSpacing: '1px'}} className='text-center mt-5'>Our collection of furniture's</h1>
             <div className="furnitures-container">
-            {
-                shows.map(show => <Furniture
-                    key={show._id}
-                    show={show}
-                >
-                </Furniture>)
-            }
+                    {
+                        shows.map(show => <Furniture
+                            key={show._id}
+                            show={show}
+                        >
+                        </Furniture>)
+                    
+                    }
             </div>
             </div>
         </div>

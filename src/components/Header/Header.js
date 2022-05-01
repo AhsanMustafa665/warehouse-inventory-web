@@ -2,7 +2,7 @@ import { signOut } from 'firebase/auth';
 import React from 'react';
 import { Container, Nav, Navbar} from 'react-bootstrap';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../Assests/images/logo2.png'
 import auth from '../../firebase.init';
 import './Header.css';
@@ -23,20 +23,44 @@ const Header = () => {
         <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               
+            <NavLink
+          className={({ isActive }) => (isActive ? "active-link" : "link")}
+          to='/home'
+        >
+          Home
+        </NavLink>
+            <NavLink
+          className={({ isActive }) => (isActive ? "active-link" : "link")}
+          to='featured'
+        >
+         Featured
+        </NavLink>
+            <NavLink
+          className={({ isActive }) => (isActive ? "active-link" : "link")}
+          to='/home#collections'
+        >
+         Collections
+        </NavLink>
+            <NavLink
+          className={({ isActive }) => (isActive ? "active-link" : "link")}
+          to='blogs'
+        >
+         Blogs
+        </NavLink>
             
-      <Nav.Link href="home#featured" className='link'>Featured</Nav.Link>
-      <Nav.Link href="home#collections" className='link'>Collections</Nav.Link>
-      <Nav.Link href="blogs"  className='link' >Blogs</Nav.Link>
+      {/* <Nav.Link href="home#featured" className='link'>Featured</Nav.Link> */}
+      {/* <Nav.Link href="home#collections" className='link'>Collections</Nav.Link>
+      <Nav.Link href="blogs"  className='link' >Blogs</Nav.Link> */}
   
     </Nav>
             <Nav>
             
-              <Nav.Link as={Link} to="about" className='link'>About me</Nav.Link>
+              <Nav.Link style={{fontSize: '20px',fontWeight: 'bold',color: '#1e90c2'}} as={Link} to="minventory" className='link'>Manage Inventory</Nav.Link>
               {
                 user ?
-                  <button onClick={handleSignOut} className='btn btn-link text-white text-decoration-none'>Sign out</button>
+                  <button  style={{fontSize: '20px',fontWeight: 'bold',color: '#1e90c2'}} onClick={handleSignOut} className='btn btn-link text-white text-decoration-none'>Sign out</button>
                   :
-                  <Nav.Link as={Link} to="login">Login </Nav.Link>}
+                  <Nav.Link  style={{fontSize: '20px',fontWeight: 'bold',color: '#1e90c2'}} as={Link} to="login">Login </Nav.Link>}
               <Nav.Link as={Link} to="signup"></Nav.Link>
 </Nav>
 </Navbar.Collapse>

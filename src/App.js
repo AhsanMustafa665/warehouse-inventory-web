@@ -6,6 +6,7 @@ import Blogs from './components/Pages/Blogs/Blogs';
 import Home from './components/Pages/Home/Home';
 import Login from './components/Pages/Login/Login';
 import RequireAuth from './components/Pages/Login/RequireAuth/RequireAuth';
+import ManageInventory from './components/Pages/ManageInventory/ManageInventory';
 import NotFound from './components/Pages/NotFound/NotFound';
 import Signup from './components/Pages/SignUp/SignUp';
 import UpdatedOne from './components/Pages/UpdatedOne/UpdatedOne';
@@ -30,6 +31,11 @@ function App() {
         <Route path='updateOne' element={
           <RequireAuth>
             <UpdatedOne></UpdatedOne>
+          </RequireAuth>
+        }></Route>
+        <Route path='/minventory' element={
+          <RequireAuth>
+            <ManageInventory></ManageInventory>
           </RequireAuth>
         }></Route>
         <Route path='/login' element={<Login></Login>}></Route>

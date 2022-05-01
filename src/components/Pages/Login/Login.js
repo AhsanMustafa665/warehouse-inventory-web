@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import auth from "../../../firebase.init";
+import googlePhoto from "../../../Assests/images/google/google.png";
 import "./Login.css";
 
 
@@ -93,7 +94,7 @@ const Login = () => {
 
     return (
         <div className="login-container">
-            <div className="login-title">LOGIN</div>
+            <div className="login-title">PLEASE LOGIN</div>
             <form className="login-form" onSubmit={handleLogin}>
                 <input type="text" placeholder="Your Email" onChange={handleEmailChange} />
                 {errors?.email && <p className="error-message">{errors.email}</p>}
@@ -105,9 +106,17 @@ const Login = () => {
 
                 <p>Don't have an account? <Link to="/signup">Sign up first</Link> </p>
             </form>
-
-            <button onClick={() => signInWithGoogle()}>Google</button>
+              <div>
+        <button  
+        onClick={() => signInWithGoogle()}
+        className="w-100 mt-3"
+      >
+        <img src={googlePhoto} alt="" />
+        <span className="px-2">Google sign in</span>
+                </button>
+                </div>
         </div>
+            
     );
 };
 
