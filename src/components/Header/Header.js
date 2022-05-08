@@ -29,18 +29,18 @@ const Header = () => {
         >
           Home
         </NavLink>
-            <NavLink
+            {/* <NavLink
           className={({ isActive }) => (isActive ? "active-link" : "link")}
-          to='featured'
+          to='/featured'
         >
          Featured
         </NavLink>
             <NavLink
           className={({ isActive }) => (isActive ? "active-link" : "link")}
-          to='/home#collections'
+          to='collections'
         >
          Collections
-        </NavLink>
+        </NavLink> */}
             <NavLink
           className={({ isActive }) => (isActive ? "active-link" : "link")}
           to='blogs'

@@ -7,7 +7,7 @@ const Furnitures = () => {
     const [shows, setShows] = useState([]);
     
     useEffect( ()=>{
-        fetch('http://localhost:5000/product')
+        fetch('https://immense-everglades-44519.herokuapp.com/product')
         .then(res => res.json())
         .then(data => setShows(data.slice(0,6)));
     }, [])

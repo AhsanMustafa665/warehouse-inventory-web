@@ -9,7 +9,7 @@ const ManageInventory = () => {
     const [size, setSize] = useState(10);
 
     useEffect(() => {
-        fetch('http://localhost:5000/productCount')
+        fetch('https://immense-everglades-44519.herokuapp.com/productCount')
             .then(res => res.json())
             .then(data => {
                 const count = data.count;
@@ -19,7 +19,7 @@ const ManageInventory = () => {
     }, [])
     
     useEffect( ()=>{
-        fetch(`http://localhost:5000/product?page=${page}&size=${size}`)
+        fetch(`https://immense-everglades-44519.herokuapp.com/product?page=${page}&size=${size}`)
         .then(res => res.json())
         .then(data => setShows(data));
     }, [page, size])

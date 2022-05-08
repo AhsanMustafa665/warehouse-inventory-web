@@ -25,7 +25,6 @@ const Home = () => {
     return (
     <>
         <div>
-            
                 <Banner></Banner>
                 <h1 style={{color:'rgb(122, 15, 15)',fontWeight: '900',fontSize: '2.2rem',letterSpacing: '1px'}} className='text-center mt-5'>Featured Items</h1>
             <div   id='featured' className="container college">

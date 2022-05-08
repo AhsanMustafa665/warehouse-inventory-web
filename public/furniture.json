@@ -5,7 +5,7 @@
         "img": "https://img.freepik.com/free-vector/oculist-office-empty-optometrist-cabinet-interior_1441-3657.jpg",
         "description": "Shop Affordable New Office Furniture. Explore Our Unmatched Furniture Selection Today! Huge Selection of Office Furniture to Fit Your Needs. Custom Sizes Available.",
         "price": "168",
-        "quality": "10",
+        "quantity": "10",
         "supplierName": "Mr.Alex"
     },
     {
@@ -14,7 +14,7 @@
         "img": "https://img.freepik.com/free-photo/mid-century-modern-living-room-interior-design-with-monstera-tree_53876-129804.jpg",
         "description": "Office Furniture Company in Miami. Great In-Stock Inventory. In House Delivery Team. ",
         "price": "200",
-        "quality": "12",
+        "quantity": "12",
         "supplierName": "ML. Glox"
     },
     {
@@ -23,7 +23,7 @@
         "img": "https://img.freepik.com/free-psd/gaming-chairs-mockup_1332-21836.jpg",
         "description": "Modern Designer Styles For Home, Work and More. Iconic Modern Furniture, Textiles, Lighting etc.",
         "price": "198",
-        "quality": "14",
+        "quantity": "14",
         "supplierName": "Mr. Jander"
     },
     {
@@ -32,7 +32,7 @@
         "img": "https://img.freepik.com/free-photo/two-seater-dark-brown-faux-leather-bench-ottoman-upholstered-with-storage-space-isolated-white-clipping-path-saved_351981-1486.jpg",
         "description": "Shop Affordable New Office Furniture. Explore Our Unmatched Furniture Selection Today!",
         "price": "102",
-        "quality": "19",
+        "quantity": "19",
         "supplierName": "Mr. Bravo"
     },
     {
@@ -41,7 +41,7 @@
         "img": "https://img.freepik.com/free-photo/chair-table-dinning-beach-sea-with-blue-sky_74190-6094.jpg",
         "description": "Latest Offers Today. Search The Best Companies. Find The Best Price Here.",
         "price": "195",
-        "quality": "20",
+        "quantity": "20",
         "supplierName": "Mr. Messio"
     },
     {
@@ -50,7 +50,7 @@
         "img": "https://img.freepik.com/free-photo/wooden-table-chairs-empty-tropical-cafe-rice-terraces-island-bali-indonesia-close-up_185094-4120.jpg",
         "description": "Search Office Furniture Online. Compare Suppliers & Prices All In One Place. Search Now.",
         "price": "105",
-        "quality": "18",
+        "quantity": "18",
         "supplierName": "Mr. Steven"
     },
     {
