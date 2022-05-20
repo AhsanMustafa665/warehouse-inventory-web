@@ -1,6 +1,6 @@
 # The Inventory webite (Furniture collections)
 
-<a href="https://doctors-website-131c4.web.app/">Live site hosted (firebase): https://doctors-website-131c4.web.app/</a>
+<a href="https://warehouse-website-60530.firebaseapp.com/">Live site hosted (firebase): https://warehouse-website-60530.firebaseapp.com/</a>
 
 ## Description :
 
